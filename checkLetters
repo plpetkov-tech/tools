@@ -1,0 +1,20 @@
+    public static void findNumberOfVowelsAndConsonantsWithAscii(String input) {
+        int vowelsCount = 0;
+        int consonantCount = 0;
+        String vowels = "aeiouyAEIOUY";
+        for (int i = 0; i < input.length(); i++) {
+            int asciiValue = (int) input.charAt(i);
+            // check if character is a letter
+            if ((asciiValue <= 90 && asciiValue >= 65) || asciiValue <= 122 && asciiValue >= 97) {
+                if (vowels.contains(Character.toString(input.charAt(i)))) {
+                    vowelsCount++;
+                } else {
+                    consonantCount++;
+                }
+            }
+        }
+
+        System.out.println("There are " + vowelsCount + " vowels in " + input);
+        System.out.println("There are " + consonantCount + " consonants in " + input);
+        System.out.println();
+    }
