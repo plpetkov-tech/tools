@@ -1,4 +1,8 @@
-    public static void findNumberOfVowelsAndConsonantsWithAscii(String input) {
+   /*This code snippet, checks how much vowels and consonants can be found in a String input.
+However it checks asciiValue of each char in the string, making sure if it is a letter or not.*/
+
+   
+   public static void findNumberOfVowelsAndConsonantsWithAscii(String input) {
         int vowelsCount = 0;
         int consonantCount = 0;
         String vowels = "aeiouyAEIOUY";
